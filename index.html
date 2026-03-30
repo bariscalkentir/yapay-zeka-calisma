@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Python 2 Günlük Çalışma Programı - İnteraktif konu anlatımı, kod örnekleri, quizler ve alıştırmalar">
+  <title>🐍 Python Çalışma Programı</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>🐍 Python Çalışma Programı</h1>
+    <div class="day-toggle">
+      <button class="day-btn active" data-day="day1" onclick="switchDay('day1')">📅 1. Gün</button>
+      <button class="day-btn" data-day="day2" onclick="switchDay('day2')">📅 2. Gün</button>
+    </div>
+  </header>
+
+  <!-- PROGRESS -->
+  <div class="progress-wrap">
+    <div class="progress-info">
+      <span id="progressText">0 / 5 konu tamamlandı</span>
+      <span class="pct" id="progressPct">0%</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- DAY 1 -->
+    <section class="day-section active" id="day1">
+      <h2 class="day-title">1. Gün — Temel Kavramlar</h2>
+      <p class="day-subtitle">Print, Değişkenler, Veri Türleri, Operatörler, Koşullar ve String İşlemleri</p>
+      
+      <div class="tip-box">
+        <strong>💡 Çalışma İpucu:</strong> Her konuyu sırayla açın, konu anlatımını okuyun, kod örneklerini inceleyin, quizi çözün ve alıştırmayı kendiniz yapmaya çalışın. Tamamladığınız konuları ✓ ile işaretleyin.
+      </div>
+
+      <div class="topics-container"></div>
+    </section>
+
+    <!-- DAY 2 -->
+    <section class="day-section" id="day2">
+      <h2 class="day-title">2. Gün — Veri Yapıları ve Döngüler</h2>
+      <p class="day-subtitle">Liste, Tuple, Set, Döngüler, Tür Dönüşümleri ve Sözlük (Dict)</p>
+
+      <div class="tip-box">
+        <strong>💡 Çalışma İpucu:</strong> Bugün Python'ın veri yapılarını ve döngüleri öğreneceksiniz. Her veri türünün ne zaman kullanıldığını anlamaya odaklanın. Kod örneklerini mutlaka kendiniz de deneyin!
+      </div>
+
+      <div class="topics-container"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
